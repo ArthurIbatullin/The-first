@@ -1,4 +1,4 @@
-# Vanilla/Native state
+## Vanilla/Native state
 
 A new Flutter project.
 
