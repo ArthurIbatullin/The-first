@@ -1,4 +1,4 @@
-# flutter_application_1
+# Vanilla/Native state
 
 A new Flutter project.
 
