@@ -14,9 +14,9 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
             child: Text(
-          'Text in body',
-          style: TextStyle(
-              fontSize: 30, color: Colors.red, fontFamily: 'Time New Roman'),
+          'I want to go \n\n to Valhalla',
+          style:
+              TextStyle(fontSize: 30, color: Colors.red, fontFamily: 'viking'),
         )),
         floatingActionButton: FloatingActionButton(
           child: Text('Tap me'),
@@ -29,3 +29,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+//Скачать шрифт на fonts.google.com
+//поместить его в созданную нами папку в этом проекте fonts
+//Внести изменения в файл pubspec.yaml
+//Добавить и убрать коментарий Ctrl = /
