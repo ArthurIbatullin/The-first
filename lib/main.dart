@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
             child: Text(
-          'I want to go \n\n to Valhalla',
+          'I want to go \n\n to Valhalla!',
           style:
               TextStyle(fontSize: 30, color: Colors.red, fontFamily: 'viking'),
         )),
