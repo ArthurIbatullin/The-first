@@ -6,10 +6,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Text(
-        'Dark side',
-        style: TextStyle(
-            fontSize: 20, color: Colors.red, fontFamily: 'Times New Roman'),
+      theme: ThemeData(primarySwatch: Colors.amber),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Header color'),
+        ),
       ),
     );
   }
