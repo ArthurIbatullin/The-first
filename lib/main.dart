@@ -10,6 +10,20 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text('Header color'),
+          centerTitle: true,
+        ),
+        body: Center(
+            child: Text(
+          'Text in body',
+          style: TextStyle(
+              fontSize: 30, color: Colors.red, fontFamily: 'Time New Roman'),
+        )),
+        floatingActionButton: FloatingActionButton(
+          child: Text('Tap me'),
+          backgroundColor: Colors.amber,
+          onPressed: () {
+            print('Clicked');
+          },
         ),
       ),
     );
