@@ -10,14 +10,13 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text('Header color'),
+          titleTextStyle:
+              TextStyle(fontSize: 30, color: Colors.grey, fontFamily: 'viking'),
           centerTitle: true,
         ),
         body: Center(
-            child: Text(
-          'I want to go \n\n to Valhalla!',
-          style:
-              TextStyle(fontSize: 30, color: Colors.red, fontFamily: 'viking'),
-        )),
+          child: Icon(Icons.settings, size: 300, color: Colors.grey),
+        ),
         floatingActionButton: FloatingActionButton(
           child: Text('Tap me'),
           backgroundColor: Colors.amber,
