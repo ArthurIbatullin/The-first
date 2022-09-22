@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
         body: Center(
-          child: Icon(Icons.settings, size: 100, color: Colors.grey),
+          child: Icon(Icons.settings, size: 300, color: Colors.grey),
         ),
         floatingActionButton: FloatingActionButton(
           child: Text('Tap me'),
