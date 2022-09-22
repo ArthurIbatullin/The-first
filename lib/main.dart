@@ -15,8 +15,57 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
         body: Center(
-          child: Icon(Icons.settings, size: 300, color: Colors.grey),
-        ),
+            child: OutlinedButton.icon(
+          icon: const Icon(
+            Icons.adb_sharp,
+            color: Colors.pink,
+          ),
+          label: const Text("Touch me"),
+          style: ButtonStyle(
+            backgroundColor: MaterialStatePropertyAll<Color>(Colors.amber),
+            foregroundColor: MaterialStateProperty.all<Color>(Colors.grey),
+          ),
+          onPressed: () {
+            // do something here
+          },
+        )
+            //  ElevatedButton(
+            //   onPressed: () {},
+            //   child: Wrap(
+            //     children: <Widget>[
+            //       Icon(
+            //         Icons.favorite,
+            //         color: Colors.pink,
+            //         size: 24.0,
+            //       ),
+            //       SizedBox(
+            //         width: 10,
+            //       ),
+            //       Text("Tap", style: TextStyle(fontSize: 20)),
+            //     ],
+            //   ),
+            // ),
+
+            // ElevatedButton(
+            //     child: Text("Click", style: TextStyle(fontSize: 30)),
+            //     onPressed: () {})
+
+            //   FloatingActionButton(
+            //   backgroundColor: Colors.orange,
+            //   elevation: 1,
+            //   onPressed: () => {},
+            // ),
+
+            // TextButton(
+            //   onPressed: () {},
+            //   child: Text('tap tap tap'),
+            //   style: ButtonStyle(
+            //     backgroundColor: MaterialStateProperty.all<Color>(Colors.amber),
+            //     foregroundColor: MaterialStateProperty.all<Color>(Colors.grey),
+            //   ),
+            // ),
+            // Icon(Icons.settings, size: 300, color: Colors.grey),
+            ),
         floatingActionButton: FloatingActionButton(
           child: Text('Tap me'),
           backgroundColor: Colors.amber,
