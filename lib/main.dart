@@ -15,20 +15,28 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
         body: Center(
-            child: OutlinedButton.icon(
-          icon: const Icon(
-            Icons.adb_sharp,
-            color: Colors.pink,
-          ),
-          label: const Text("Touch me"),
-          style: ButtonStyle(
-            backgroundColor: MaterialStatePropertyAll<Color>(Colors.amber),
-            foregroundColor: MaterialStateProperty.all<Color>(Colors.grey),
-          ),
-          onPressed: () {
-            // do something here
-          },
+            child: Image(
+          image: AssetImage('assets/image/Artyrito.jpg'),
         )
+
+            // Image(
+            //     image: NetworkImage(
+            //         'https://cs4.pikabu.ru/post_img/big/2015/01/05/7/1420454860_63009327.jpeg')),
+
+            //   OutlinedButton.icon(
+            // icon: const Icon(
+            //   Icons.adb_sharp,
+            //   color: Colors.pink,
+            // ),
+            // label: const Text("Touch me"),
+            // style: ButtonStyle(
+            //   backgroundColor: MaterialStatePropertyAll<Color>(Colors.amber),
+            //   foregroundColor: MaterialStateProperty.all<Color>(Colors.grey),
+            // ),
+            // onPressed: () {
+            // do something here
+            // },
+
             //  ElevatedButton(
             //   onPressed: () {},
             //   child: Wrap(
