@@ -14,66 +14,76 @@ class MyApp extends StatelessWidget {
               TextStyle(fontSize: 30, color: Colors.grey, fontFamily: 'viking'),
           centerTitle: true,
         ),
-        body: Center(
-            child: Image(
-          image: AssetImage('assets/image/Artyrito.jpg'),
-        )
+        body: Container(
+          color: Colors.amber,
+          child: Text('Byyyyyy'),
+          margin: EdgeInsets.all(20.5), // со всех сторон отступ
+          padding: EdgeInsets.symmetric(
+              horizontal: 50.5, // Внутренний отступ по горизонтали
+              vertical: 30.5), //внутренний отступ по вертикали
+          // margin: EdgeInsets.fromLTRB(left, top, right, bottom) тут можно снаружи указать отступ отдельно для 4ех сторон
+          // можно так записать margin: EdgeInsets.fromLTRB(27.4, 69.0, 24.1, 87.9)
+        ),
 
-            // Image(
-            //     image: NetworkImage(
-            //         'https://cs4.pikabu.ru/post_img/big/2015/01/05/7/1420454860_63009327.jpeg')),
+        //     Image(
+        //   image: AssetImage('assets/image/Artyrito.jpg'),
+        // )
 
-            //   OutlinedButton.icon(
-            // icon: const Icon(
-            //   Icons.adb_sharp,
-            //   color: Colors.pink,
-            // ),
-            // label: const Text("Touch me"),
-            // style: ButtonStyle(
-            //   backgroundColor: MaterialStatePropertyAll<Color>(Colors.amber),
-            //   foregroundColor: MaterialStateProperty.all<Color>(Colors.grey),
-            // ),
-            // onPressed: () {
-            // do something here
-            // },
+        // Image(
+        //     image: NetworkImage(
+        //         'https://cs4.pikabu.ru/post_img/big/2015/01/05/7/1420454860_63009327.jpeg')),
 
-            //  ElevatedButton(
-            //   onPressed: () {},
-            //   child: Wrap(
-            //     children: <Widget>[
-            //       Icon(
-            //         Icons.favorite,
-            //         color: Colors.pink,
-            //         size: 24.0,
-            //       ),
-            //       SizedBox(
-            //         width: 10,
-            //       ),
-            //       Text("Tap", style: TextStyle(fontSize: 20)),
-            //     ],
-            //   ),
-            // ),
+        //   OutlinedButton.icon(
+        // icon: const Icon(
+        //   Icons.adb_sharp,
+        //   color: Colors.pink,
+        // ),
+        // label: const Text("Touch me"),
+        // style: ButtonStyle(
+        //   backgroundColor: MaterialStatePropertyAll<Color>(Colors.amber),
+        //   foregroundColor: MaterialStateProperty.all<Color>(Colors.grey),
+        // ),
+        // onPressed: () {
+        // do something here
+        // },
 
-            // ElevatedButton(
-            //     child: Text("Click", style: TextStyle(fontSize: 30)),
-            //     onPressed: () {})
+        //  ElevatedButton(
+        //   onPressed: () {},
+        //   child: Wrap(
+        //     children: <Widget>[
+        //       Icon(
+        //         Icons.favorite,
+        //         color: Colors.pink,
+        //         size: 24.0,
+        //       ),
+        //       SizedBox(
+        //         width: 10,
+        //       ),
+        //       Text("Tap", style: TextStyle(fontSize: 20)),
+        //     ],
+        //   ),
+        // ),
 
-            //   FloatingActionButton(
-            //   backgroundColor: Colors.orange,
-            //   elevation: 1,
-            //   onPressed: () => {},
-            // ),
+        // ElevatedButton(
+        //     child: Text("Click", style: TextStyle(fontSize: 30)),
+        //     onPressed: () {})
 
-            // TextButton(
-            //   onPressed: () {},
-            //   child: Text('tap tap tap'),
-            //   style: ButtonStyle(
-            //     backgroundColor: MaterialStateProperty.all<Color>(Colors.amber),
-            //     foregroundColor: MaterialStateProperty.all<Color>(Colors.grey),
-            //   ),
-            // ),
-            // Icon(Icons.settings, size: 300, color: Colors.grey),
-            ),
+        //   FloatingActionButton(
+        //   backgroundColor: Colors.orange,
+        //   elevation: 1,
+        //   onPressed: () => {},
+        // ),
+
+        // TextButton(
+        //   onPressed: () {},
+        //   child: Text('tap tap tap'),
+        //   style: ButtonStyle(
+        //     backgroundColor: MaterialStateProperty.all<Color>(Colors.amber),
+        //     foregroundColor: MaterialStateProperty.all<Color>(Colors.grey),
+        //   ),
+        // ),
+        // Icon(Icons.settings, size: 300, color: Colors.grey),
+
         floatingActionButton: FloatingActionButton(
           child: Text('Tap me'),
           backgroundColor: Colors.amber,
