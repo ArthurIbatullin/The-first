@@ -14,16 +14,50 @@ class MyApp extends StatelessWidget {
               TextStyle(fontSize: 30, color: Colors.grey, fontFamily: 'viking'),
           centerTitle: true,
         ),
-        body: Container(
-          color: Colors.amber,
-          child: Text('Byyyyyy'),
-          margin: EdgeInsets.all(20.5), // со всех сторон отступ
-          padding: EdgeInsets.symmetric(
-              horizontal: 50.5, // Внутренний отступ по горизонтали
-              vertical: 30.5), //внутренний отступ по вертикали
-          // margin: EdgeInsets.fromLTRB(left, top, right, bottom) тут можно снаружи указать отступ отдельно для 4ех сторон
-          // можно так записать margin: EdgeInsets.fromLTRB(27.4, 69.0, 24.1, 87.9)
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Column(
+                mainAxisAlignment: MainAxisAlignment
+                    .spaceAround, // Свойство куда прижимаются элементы
+                crossAxisAlignment:
+                    CrossAxisAlignment.end, // Куда прижимаются в своей клетке
+                children: [
+                  Text('Pryvet'),
+                  TextButton(onPressed: () {}, child: Text('Hello')),
+                  Text('Pryvet'),
+                ]),
+            Column(children: [
+              Text('Pryvet'),
+              TextButton(onPressed: () {}, child: Text('Hello'))
+            ]),
+          ],
         ),
+
+        // Column(
+        //   children: [
+        //     Text('Pryvet'),
+        //     TextButton(onPressed: () {}, child: Text('Hello'))
+        //   ],
+        // ),
+
+        // Row(
+        //   children: [
+        //     Text('Pryvet'),
+        //     TextButton(onPressed: () {}, child: Text('Hello'))
+        //   ],
+        // ),
+
+        // Container(
+        //   color: Colors.amber,
+        //   child: Text('Byyyyyy'),
+        //   margin: EdgeInsets.all(20.5), // со всех сторон отступ
+        //   padding: EdgeInsets.symmetric(
+        //       horizontal: 50.5, // Внутренний отступ по горизонтали
+        //       vertical: 30.5), //внутренний отступ по вертикали
+        //   // margin: EdgeInsets.fromLTRB(left, top, right, bottom) тут можно снаружи указать отступ отдельно для 4ех сторон
+        //   // можно так записать margin: EdgeInsets.fromLTRB(27.4, 69.0, 24.1, 87.9)
+        // ),
 
         //     Image(
         //   image: AssetImage('assets/image/Artyrito.jpg'),
