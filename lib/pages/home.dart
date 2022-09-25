@@ -7,16 +7,17 @@ class Home extends StatefulWidget {
   State<Home> createState() => _HomeState();
 }
 
-List todoList = [];
-
-@override
-void initState() {
-  super.initState();
-
-  todoList.addAll(['Buy milk', 'Wash dishes', 'купить картошку']);
-}
-
 class _HomeState extends State<Home> {
+  String _userToDo = "";
+  List todoList = [];
+
+  @override
+  void initState() {
+    super.initState();
+
+    todoList.addAll(['Buy milk', 'Wash dishes', 'купить картошку']);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,7 +60,19 @@ class _HomeState extends State<Home> {
               builder: (BuildContext context) {
                 return AlertDialog(
                   title: Text('Dobavit element'),
-                  content: TextField(onChanged: (String value) {}),
+                  content: TextField(onChanged: (String value) {
+                    _userToDo = value;
+                  }),
+                  actions: [
+                    ElevatedButton(
+                        onPressed: () {
+                          setState(() {
+                            todoList.add(_userToDo);
+                          });
+                          Navigator.of(context).pop();
+                        },
+                        child: Text("Dobavit"))
+                  ],
                 );
               });
         },
